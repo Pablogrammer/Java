@@ -1,10 +1,22 @@
 package Loging;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author propa
+ * @version 1.0
+ * 
+ */
 
 public class Loging {
+	/**
+	 * Esta será la clase principal y la única de nuestro registro
+	 * @param args
+	 * @throws Exception
+	 */
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
+		
 
 		Scanner sc = new Scanner(System.in);
 		int a;
@@ -39,8 +51,18 @@ public class Loging {
 		
 	}
 
+	/**
+	 * 
+	 * @param b es la peticion de usuario
+	 * @param c es la peticion de contraseña
+	 * @param d es el usuario que has insertado
+	 * @param e es la contraseña insertada
+	 * @return devuelve un booleano dependiendo si b=d y c=e
+	 * 
+	 */
 	public static boolean registro(String b, String c, String d, String e){
 		boolean resultado = true;
+		
 			
 		if (b.equals(d) && c.equals(e)) {
 			
